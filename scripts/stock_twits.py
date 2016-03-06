@@ -8,7 +8,8 @@ import urllib2
 import oauth2
 import requests
 
-URL = 'https://api.stocktwits.com/api/2/oauth/'
+AUTHORIZATION_URL = 'https://api.stocktwits.com/api/2/oauth/authorize'
+ACCESS_TOKEN_URL = 'https://api.stocktwits.com/api/2/oauth/token'
 response = requests.get(url)
 if resp.status_code != 200:
     raise ApiError()
